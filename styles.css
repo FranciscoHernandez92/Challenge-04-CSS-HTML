@@ -73,6 +73,14 @@ header {
 }
 
 @media (min-width: 500px) {
+  #games {
+    display: flex;
+    margin-left: 9rem;
+  }
+  #image.image {
+    display: flex;
+    margin-left: 1.2rem;
+  }
   .mobile-nav {
     display: flex;
     justify-content: end;
@@ -81,6 +89,10 @@ header {
   }
   .desk-button {
     padding: 0.4rem;
+    :hover {
+      background-color: rgb(228, 97, 31);
+      border: white;
+    }
   }
   .p1,
   .p2 {
@@ -93,49 +105,13 @@ header {
   .desk-nav {
     display: flex;
     ul {
+      ul {
+        display: none;
+      }
       display: flex;
       gap: 1.5rem;
       color: black;
       margin-top: 0.5rem;
     }
   }
-  /* .activities {
-    display: none;
-  }
-  .image {
-    clip: rect(0 100px 100px 0);
-    display: flex;
-    flex-direction: row;
-  }
-  .mobile-button {
-    position: relative;
-    right: -23rem;
-    top: -6rem;
-  }
-  .p1,
-  .p2 {
-    text-align: left;
-    margin-left: 1rem;
-  }
-  .mobile-menu {
-    display: none;
-  }
-  .desk-nav {
-    display: flex;
-    flex-direction: row;
-  }
-  .desk-li {
-    display: flex;
-    flex-direction: row;
-  }
-}
-.desk-button {
-  display: flex;
-  background-color: white;
-  border-radius: 0 300px 300px 300px;
-  border: 1px solid rgb(228, 97, 31);
-}
-.desk-ul {
-  text-decoration: none;
-  */
 }
