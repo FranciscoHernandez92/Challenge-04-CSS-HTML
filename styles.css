@@ -16,7 +16,22 @@ body {
   padding-inline: 1rem;
   margin-top: 0rem;
 }
-nav {
+label {
+  margin-top: 0.3rem;
+}
+.desk-nav {
+  display: none;
+  text-decoration: none;
+  ul {
+    list-style: none;
+  }
+}
+.desk-button {
+  background-color: white;
+  border-radius: 0 240px 240px 240px;
+  border: 1.5px solid rgb(228, 97, 31);
+}
+.mobile-nav {
   color: rgb(228, 97, 31);
 }
 h2 {
@@ -27,7 +42,7 @@ h2 {
   font-size: 40px;
   font-weight: bold;
 }
-button {
+.mobile-button {
   background-color: rgb(228, 97, 31);
   border-radius: 0 300px 300px 300px;
   color: white;
@@ -55,4 +70,72 @@ main {
 }
 header {
   box-shadow: 1px 1px 7px black;
+}
+
+@media (min-width: 500px) {
+  .mobile-nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 2.5rem;
+    margin-top: -5.5rem;
+  }
+  .desk-button {
+    padding: 0.4rem;
+  }
+  .p1,
+  .p2 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .desk-nav {
+    display: flex;
+    ul {
+      display: flex;
+      gap: 1.5rem;
+      color: black;
+      margin-top: 0.5rem;
+    }
+  }
+  /* .activities {
+    display: none;
+  }
+  .image {
+    clip: rect(0 100px 100px 0);
+    display: flex;
+    flex-direction: row;
+  }
+  .mobile-button {
+    position: relative;
+    right: -23rem;
+    top: -6rem;
+  }
+  .p1,
+  .p2 {
+    text-align: left;
+    margin-left: 1rem;
+  }
+  .mobile-menu {
+    display: none;
+  }
+  .desk-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .desk-li {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.desk-button {
+  display: flex;
+  background-color: white;
+  border-radius: 0 300px 300px 300px;
+  border: 1px solid rgb(228, 97, 31);
+}
+.desk-ul {
+  text-decoration: none;
+  */
 }
